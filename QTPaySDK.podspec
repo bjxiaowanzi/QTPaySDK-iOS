@@ -8,7 +8,7 @@ A Pay SDK of QFPay Inc. Include WeChat Pay, AliPay etc.
 DESC
 s.homepage     = "http://www.qfpay.com/"
 s.author       = { "bjxiaowanzi" => "zhoucheng@qfpay.com" }
-s.license      = "COMMERCIAL"
+s.license      = "MIT"
 s.ios.platform = :ios, '6.0'
 s.source       = { :git => "https://github.com/bjxiaowanzi/QTPaySDK-iOS.git", :tag => "#{s.version}" }
 s.requires_arc = true
