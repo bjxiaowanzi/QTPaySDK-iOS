@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = "**/*.framework"
     s.preserve_paths = "**/*.framework"
     s.resources    = "**/*.bundle"
-    s.frameworks = 'Foundation', 'UIKit', 'CoreLocation', 'SystemConfiguration', 'MobileCoreServices'
+    s.frameworks = 'Foundation', 'UIKit', 'CoreLocation', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony'
     s.libraries = ["z", "c++", "sqlite3"]
     s.xcconfig  = { "OTHER_LDFLAGS" => "-lObjC",'LD_RUNPATH_SEARCH_PATHS' => '"$(SRCROOT)/**/*.framework"' }
 end
