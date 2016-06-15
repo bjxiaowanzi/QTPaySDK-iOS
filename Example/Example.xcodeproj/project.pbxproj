@@ -17,7 +17,6 @@
 		138BE0FF1D0EA48900638312 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 138BE0F91D0EA48900638312 /* AlipaySDK.framework */; };
 		138BE1001D0EA48900638312 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 138BE0FA1D0EA48900638312 /* libcrypto.a */; };
 		138BE1011D0EA48900638312 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 138BE0FB1D0EA48900638312 /* libssl.a */; };
-		138BE1021D0EA48900638312 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 138BE0FD1D0EA48900638312 /* libWeChatSDK.a */; };
 		138BE1091D0EA4C300638312 /* NMEHybridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138BE1051D0EA4C300638312 /* NMEHybridViewController.m */; };
 		138BE10A1D0EA4C300638312 /* NMEHybridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 138BE1061D0EA4C300638312 /* NMEHybridViewController.xib */; };
 		138BE10B1D0EA4C300638312 /* QFOfflineH5Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 138BE1081D0EA4C300638312 /* QFOfflineH5Proxy.m */; };
@@ -30,6 +29,7 @@
 		138BE1221D0EAEE000638312 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 138BE1211D0EAEE000638312 /* Foundation.framework */; };
 		138BE1241D0EAEE800638312 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 138BE1231D0EAEE800638312 /* CoreGraphics.framework */; };
 		138BE1261D0EAEFD00638312 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 138BE1251D0EAEFD00638312 /* UIKit.framework */; };
+		138BE1331D114E4700638312 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 138BE1321D114E4700638312 /* libWeChatSDK.a */; };
 		8810AB50B74D73AA93312257 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A782D699AF36BFA28FC00733 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,6 @@
 		138BE0F91D0EA48900638312 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		138BE0FA1D0EA48900638312 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
 		138BE0FB1D0EA48900638312 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
-		138BE0FD1D0EA48900638312 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		138BE1041D0EA4C300638312 /* NMEHybridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMEHybridViewController.h; sourceTree = "<group>"; };
 		138BE1051D0EA4C300638312 /* NMEHybridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMEHybridViewController.m; sourceTree = "<group>"; };
 		138BE1061D0EA4C300638312 /* NMEHybridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NMEHybridViewController.xib; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		138BE1211D0EAEE000638312 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		138BE1231D0EAEE800638312 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		138BE1251D0EAEFD00638312 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		138BE1321D114E4700638312 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		71A1C8291E7E77DFEDDAA333 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A782D699AF36BFA28FC00733 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFBA9AC52F1E667EDACDF50B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +78,7 @@
 				138BE1241D0EAEE800638312 /* CoreGraphics.framework in Frameworks */,
 				138BE1221D0EAEE000638312 /* Foundation.framework in Frameworks */,
 				138BE1201D0EAEAC00638312 /* libc++.tbd in Frameworks */,
+				138BE1331D114E4700638312 /* libWeChatSDK.a in Frameworks */,
 				138BE11E1D0EAE8300638312 /* CFNetwork.framework in Frameworks */,
 				138BE11C1D0EAE7B00638312 /* SystemConfiguration.framework in Frameworks */,
 				138BE11A1D0EAE7400638312 /* Security.framework in Frameworks */,
@@ -86,7 +87,6 @@
 				8810AB50B74D73AA93312257 /* libPods.a in Frameworks */,
 				138BE0FF1D0EA48900638312 /* AlipaySDK.framework in Frameworks */,
 				138BE1001D0EA48900638312 /* libcrypto.a in Frameworks */,
-				138BE1021D0EA48900638312 /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,8 +142,8 @@
 		138BE0F61D0EA48900638312 /* ThirdPartPay */ = {
 			isa = PBXGroup;
 			children = (
+				138BE1311D114E4700638312 /* WeChatSDK1.7 */,
 				138BE0F71D0EA48900638312 /* AliPaySDK2.0 */,
-				138BE0FC1D0EA48900638312 /* WeChatSDK1.5 */,
 			);
 			name = ThirdPartPay;
 			path = ../ThirdPartPay;
@@ -160,14 +160,6 @@
 			path = AliPaySDK2.0;
 			sourceTree = "<group>";
 		};
-		138BE0FC1D0EA48900638312 /* WeChatSDK1.5 */ = {
-			isa = PBXGroup;
-			children = (
-				138BE0FD1D0EA48900638312 /* libWeChatSDK.a */,
-			);
-			path = WeChatSDK1.5;
-			sourceTree = "<group>";
-		};
 		138BE1031D0EA4C300638312 /* OfflineUpdate */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +171,14 @@
 			);
 			path = OfflineUpdate;
 			sourceTree = SOURCE_ROOT;
+		};
+		138BE1311D114E4700638312 /* WeChatSDK1.7 */ = {
+			isa = PBXGroup;
+			children = (
+				138BE1321D114E4700638312 /* libWeChatSDK.a */,
+			);
+			path = WeChatSDK1.7;
+			sourceTree = "<group>";
 		};
 		8BFA477F57AD9F7332EB902D /* Pods */ = {
 			isa = PBXGroup;
