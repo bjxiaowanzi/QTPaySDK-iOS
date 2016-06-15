@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "QTPayOrder.h"
 
 typedef NS_ENUM(NSInteger, QTPaySDKEnv) {
     QTPaySDKWebSandBox      = 0, // **** Web沙盒环境
@@ -17,6 +16,11 @@ typedef NS_ENUM(NSInteger, QTPaySDKEnv) {
     QTPaySDKAppGray         = 3, // **** App灰度环境
     QTPaySDKWebProduction   = 4, // **** Web正式环境
     QTPaySDKAppProduction   = 5, // **** App正式环境
+};
+
+typedef NS_ENUM(NSInteger, QTPayType) {
+    QTPayTypeWeChat = 1,
+    QTPayTypeAliPay = 2
 };
 
 typedef void(^CompleteBlock)(NSDictionary *dicPayResult);
