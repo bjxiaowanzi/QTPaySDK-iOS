@@ -23,7 +23,7 @@ typedef NS_ENUM(NSInteger, QTPayType) {
     QTPayTypeAliPay = 2
 };
 
-typedef void(^CompleteBlock)(NSDictionary *dicPayResult);
+typedef void(^QTPaySDKCompleteBlock)(NSDictionary *dicPayResult);
 
 @interface QTPaySDK : NSObject
 
@@ -44,7 +44,7 @@ typedef void(^CompleteBlock)(NSDictionary *dicPayResult);
 - (void)setQTPaySDKEnv:(QTPaySDKEnv)payEnv;
 
 /**
- *  设置当前SDK能当前App调起的Schema
+ *  设置当前SDK能当前App调起的Schema，并注册WX的Schema
  *
  *  @param strSchema 从第三方App调起当前App的Schema
  */
@@ -58,7 +58,7 @@ typedef void(^CompleteBlock)(NSDictionary *dicPayResult);
  *  @param dicOrder      后台返回的需要支付的订单信息，因为后端返回的可能会加参数，所以不用model
  *  @param completeBlock 支付完后的回调
  */
-- (void)payWithInfo:(NSDictionary *)dicOrderInfo completeBlock:(CompleteBlock)completeBlock;
+- (void)payWithInfo:(NSDictionary *)dicOrderInfo completeBlock:(QTPaySDKCompleteBlock)completeBlock;
 
 /**
  *  处理第三方app支付完后跳回商户app携带的支付结果
@@ -66,7 +66,7 @@ typedef void(^CompleteBlock)(NSDictionary *dicPayResult);
  *  @param resultUrl     支付结果url
  *  @param completeBlock 保证商户app能通过这个回调拿到支付结果
  */
-- (void)processOrderWithPaymentResult:(NSURL *)resultUrl completeBlock:(CompleteBlock)completeBlock;
+- (void)processOrderWithPaymentResult:(NSURL *)resultUrl completeBlock:(QTPaySDKCompleteBlock)completeBlock;
 
 #pragma mark - UI
 
@@ -77,6 +77,6 @@ typedef void(^CompleteBlock)(NSDictionary *dicPayResult);
  *  @param destVC        承载支付页面的视图控制器
  *  @param completeBlock 支付结果的回调
  */
-- (void)showWithInfo:(NSDictionary *)dicOrderInfo onVC:(UIViewController *)destVC completeBlock:(CompleteBlock)completeBlock;
+- (void)showWithInfo:(NSDictionary *)dicOrderInfo onVC:(UIViewController *)destVC completeBlock:(QTPaySDKCompleteBlock)completeBlock;
 
 @end
